@@ -1,0 +1,81 @@
+# --------------------
+# Secrets & env
+# --------------------
+.env
+.env.*
+!.env.example
+**/.env
+**/.env.*
+!**/.env.example
+*.pem
+*.key
+credentials.json
+secrets.json
+
+# --------------------
+# Python
+# --------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+.venv/
+venv/
+ENV/
+env/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.tox/
+.nox/
+
+# --------------------
+# App data & vector DB (keep folder placeholders)
+# --------------------
+RAG_Project/data/*
+!RAG_Project/data/.gitkeep
+RAG_Project/vector_db/**
+!RAG_Project/vector_db/**/.gitkeep
+**/__pycache__/
+
+# --------------------
+# IDE / editor
+# --------------------
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# --------------------
+# Streamlit / logs
+# --------------------
+.streamlit/secrets.toml
+*.log
+
+# --------------------
+# Jupyter / misc
+# --------------------
+.ipynb_checkpoints/
+*.tmp
+*.bak
